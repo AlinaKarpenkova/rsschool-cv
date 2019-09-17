@@ -15,47 +15,8 @@ Personal skills: a quick-study, responsible, focused on the result, open-minded,
 4.VCS: **Git (basic knowledge)**.
 5.OS: Microsoft Windows.
 ##Code examples##
-``` (function ($) {
-$(document).ready(function () {
-
-
-function lpHeader() {
-if ($(window).scrollTop() == 0) {
-$('header').addClass('top');
-} else {
-$('header.top').removeClass('top');
-}
-}
-
-lpHeader();
-$(window).on('load scroll', lpHeader);
-var lpNav = $('header ul');
-
-lpNav.find('li a').on('click', function (e) {
-
-var linkTrgt = $($(this).attr('href'));
-if (linkTrgt.length > 0) {
-e.preventDefault();
-var offset = linkTrgt.offset().top; //
-$('body, html').animate({
-scrollTop: offset - 44
-}, 750);
-}
-});```
-
-```$('.lp-mfp-inline').magnificPopup({
-type: 'inline'
-});
-
-$('.lp-gallery').each(function () {
-$(this).magnificPopup({
-delegate: 'a',
-type: 'image',
-gallery: {
-enabled: true
-}
-});
-});```
+1.[My project](https://github.com/AlinaKarpenkova/MyProject)
+2.[Belhard tasks](https://github.com/AlinaKarpenkova/Belhard-courses)
 
 ##Experience##
 
