@@ -14,3 +14,61 @@ Personal skills: a quick-study, responsible, focused on the result, open-minded,
 3.Editors: Visual Studio Code, Adobe Brackets.
 4.VCS: **Git (basic knowledge)**.
 5.OS: Microsoft Windows.
+##Code examples##
+``` (function ($) {
+$(document).ready(function () {
+
+
+function lpHeader() {
+if ($(window).scrollTop() == 0) {
+$('header').addClass('top');
+} else {
+$('header.top').removeClass('top');
+}
+}
+
+lpHeader();
+$(window).on('load scroll', lpHeader);
+var lpNav = $('header ul');
+
+lpNav.find('li a').on('click', function (e) {
+
+var linkTrgt = $($(this).attr('href'));
+if (linkTrgt.length > 0) {
+e.preventDefault();
+var offset = linkTrgt.offset().top; //
+$('body, html').animate({
+scrollTop: offset - 44
+}, 750);
+}
+});```
+
+```$('.lp-mfp-inline').magnificPopup({
+type: 'inline'
+});
+
+$('.lp-gallery').each(function () {
+$(this).magnificPopup({
+delegate: 'a',
+type: 'image',
+gallery: {
+enabled: true
+}
+});
+});```
+
+##Experience##
+
+*Belhard-courses*: 1.Web Application Development-Basic Level
+2.Modern Front-End withJavaScript and HTML- Basic Level
+*Final project*: [GitHub](https://github.com/AlinaKarpenkova/MyProject)
+
+##Education##
+
+Belarusian State University (Modern foreign languages)
+Courses in IT Academy Belhard
+Completed tasks in [HTMLAcademy](https://htmlacademy.ru/profile/id922445)
+
+##Languages##
+English and German
+Meeting and accompanying foreigners in such events as the ESPOO Convention, XXXI ACE PlANETARY CONGRESS, 2ND EUROPEAN GAMES, The final stage of the World Cup Speed Skating
