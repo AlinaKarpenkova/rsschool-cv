@@ -1,90 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-      <link rel="stylesheet" href="css/style.css">
-    <title>My Resume</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <title>My CV</title>
 </head>
+
 <body>
-    <header>
-        <section>
-            <h1>Alina Karpenkova</h1>
-        </section>
-    </header>
-
-    <main>
-        <div class="data">
-         <img class="photo" src=".jpg" alt="Photo">
-        </div>
- 
-        <div class="data">
-        <h2>Contact Information</h2>
-            <span>phone number: +375 25 919 33 07</span><br>
-            <span> E-mail: karpenkova.alina12@gmail.com</span>
-       </div>
-
-       <div class="data">
-            <h2> Summary</h2>
-                <p class="description">
-                        My goal is to get as much experience and Knowledge as possible and become a good front-end-developer.
-                </p>
-                <span>Personal skills: a quick-study, responsible, focused on the result, open-minded, punctual.</span>
+  <div class="wrapper">
+    <header class="header">
+      <div class="logo">
+        <a href="">My CV</a>
+      </div>
+      <div class="links-container">
+        <a href="#summary">Summary</a>
+        <a href="#skills">Skills</a>
+        <a href="#examples">Example of code</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#languages">Languages</a>
       </div>
 
-        <div class="data">
-        <h2>Skills</h2>
-          <ul>
-           <li>Programming languages: HTML5, CSS3, JavaScript (basic knowledge), JQuery, Bootstrap.</li>
-            <li>API / Framework’s: Angular (basic knowledge).</li>
-            <li>itors: Visual Studio Code, Adobe Brackets.</li>
-            <li>VCS: Git (basic knowledge).</li>
-            <li>OS: Microsoft Windows.</li>
-          </ul>
-        </div>
+    </header>
+    <div class="container">
+      <main>
 
-  <div class="data">
-      <h2>Example of code</h2>
-    <ul> 
-      <li><link href="https://github.com/AlinaKarpenkova/MyProject">My project</li>
-      <li> <link href="https://github.com/AlinaKarpenkova/Belhard-courses">Belhard tasks</li>
-    </ul>
-  </div>
-
-  <div class="data">
-  <h2>Experience</h2>
-  <p><i>Belhard-courses:</i></p>
-    <ul>
-      <li>Web Application Development-Basic Level</li>
-      <li>Modern Front-End withJavaScript and HTML- Basic Level Final project: <link href="https://github.com/AlinaKarpenkova/MyProject">GitHub</li>
-    </ul>
-  </div>
-  
-  <div class="data">
-  <h2>Education</h2>
-    <span>Belarusian State University (Modern foreign languages) </span><br>
-    <span>Courses in IT Academy Belhard Completed tasks in HTMLAcademy</span>
-  </div>
-
-  <div class="data">
-    <h2>Languages</h2>
-    <span>English and German </span><br>
-    <span> Meeting and accompanying foreigners in such events as the ESPOO Convention, XXXI ACE PlANETARY CONGRESS, 2ND EUROPEAN GAMES, The final stage of the World Cup Speed Skating</span>
-  </div>
-    </main>
-    <footer>
-            <div class="centering-container">
-              
-              <div class="name">
-                        <p>Alina Karpenkova</p>
-                    </div>
-        
-                <div class="footer">
-                    <div class="year">
-                        <p>2019</p>
-                    </div>
-                </div>
+        <section>
+          <div class="data-container personal-info">
+            <div class="data">
+              <img class="photo" src="Images/picture.png" alt="Photo" width="200" height="200">
             </div>
-        </footer>
+            <div class="contact-info">
+              <h1>Alina Karpenkova</h1>
+              <hr />
+              <span>Phone number: +375 25 919 33 07</span>
+              <br />
+              <span>E-mail: karpenkova.alina12@gmail.com</span>
+              <br />
+              <span>LinkedIn:
+                <a href="https://www.linkedin.com/in/alina-karpenkova">https://www.linkedin.com/in/alina-karpenkova</a>
+              </span>
+              <br />
+              <span>GitHub:
+                <a href="https://github.com/AlinaKarpenkova">https://github.com/AlinaKarpenkova</a>
+              </span>
+              <br />
+            </div>
+          </div>
+        </section>
 
+        <section id="summary">
+          <div class="data-container">
+            <h2>Summary</h2>
+            <hr />
+            <p class="description">
+              My goal is to get as much experience and knowledge as possible and become a good front-end-developer.
+            </p>
+            <p>Personal skills: a quick-study, responsible, focused on the result, open-minded, punctual.</p>
+          </div>
+        </section>
+
+        <section id="skills">
+          <div class="data-container">
+            <h2>Skills</h2>
+            <hr />
+            <ul>
+              <li>Programming languages: HTML5, CSS3, JavaScript (basic knowledge), JQuery, Bootstrap.</li>
+              <li>API / Framework’s: Angular (basic knowledge).</li>
+              <li>Editors: Visual Studio Code, Adobe Brackets.</li>
+              <li>VCS: Git (basic knowledge).</li>
+              <li>OS: Microsoft Windows.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="examples">
+          <div class="data-container">
+            <h2>Examples of code</h2>
+            <hr />
+            <ul>
+              <li><a href="https://github.com/AlinaKarpenkova/MyProject">My project</a></li>
+              <li><a href="https://github.com/AlinaKarpenkova/Belhard-courses">Belhard tasks</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="experience">
+          <div class="data-container">
+            <h2>Experience</h2>
+            <hr />
+            <p><i>Belhard-courses:</i></p>
+            <ul>
+              <li>Web Application Development-Basic Level</li>
+              <li>Modern Front-End withJavaScript and HTML- Basic Level Final project:
+                <a href="https://github.com/AlinaKarpenkova/MyProject">GitHub</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="education">
+          <div class="data-container">
+            <h2>Education</h2>
+            <hr />
+            <ul>
+              <li>Belarusian State University (Modern foreign languages)</li>
+              <li>Courses in IT Academy Belhard Completed tasks in HTMLAcademy</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="languages">
+          <div class="data-container">
+            <h2>Languages</h2>
+            <hr />
+            <span>English and German </span><br>
+            <span> Meeting and accompanying foreigners in such events as the ESPOO Convention, XXXI ACE PlANETARY
+              CONGRESS,
+              2ND EUROPEAN GAMES, The final stage of the World Cup Speed Skating</span>
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="centering-container">
+        <div class="name">
+          <p>Alina Karpenkova</p>
+        </div>
+        <div class="year">
+          <p>2019</p>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
